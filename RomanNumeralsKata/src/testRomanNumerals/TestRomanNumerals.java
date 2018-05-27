@@ -30,5 +30,10 @@ public class TestRomanNumerals {
 		assertEquals("2", "II", RomanNumerals.arabicToRoman(2));
 		assertEquals("3", "III", RomanNumerals.arabicToRoman(3));
 	}
+	
+	@Test
+	public void four() {
+		assertEquals("4", "IV", RomanNumerals.arabicToRoman(4));
+	}
 
 }
