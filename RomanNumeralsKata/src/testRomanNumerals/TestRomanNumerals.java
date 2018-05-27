@@ -145,5 +145,29 @@ public class TestRomanNumerals {
 	public void negative() {
 		assertEquals("-987654321", "", RomanNumerals.arabicToRoman(-987654321));
 	}
+	
+	@Test
+	public void possibleLimitCase() {
+		assertEquals("39", "XXXIX", RomanNumerals.arabicToRoman(39));		
+		assertEquals("999", "CMXCIX", RomanNumerals.arabicToRoman(999));	
+		assertEquals("1066", "MLXVI", RomanNumerals.arabicToRoman(1066));
+		assertEquals("1903", "MCMIII", RomanNumerals.arabicToRoman(1903));
+		assertEquals("1954", "MCMLIV", RomanNumerals.arabicToRoman(1954));
+		assertEquals("1989", "MCMLXXXIX", RomanNumerals.arabicToRoman(1989));
+		assertEquals("1990", "MCMXC", RomanNumerals.arabicToRoman(1990));
+		assertEquals("1999", "MCMXCIX", RomanNumerals.arabicToRoman(1999));
+		assertEquals("2014", "MMXIV", RomanNumerals.arabicToRoman(2014));
+		assertEquals("2751", "MMDCCLI", RomanNumerals.arabicToRoman(2751));
+		assertEquals("3999", "MMMCMXCIX", RomanNumerals.arabicToRoman(3999));
+	}
+	
+	@Test
+	public void overFourThousand() {
+		assertEquals("4000", "MMMM", RomanNumerals.arabicToRoman(4000));
+		assertEquals("5000", "MMMMM", RomanNumerals.arabicToRoman(5000));
+		assertEquals("6000", "MMMMMM", RomanNumerals.arabicToRoman(6000));
+	}
+	
+	
 		
 }

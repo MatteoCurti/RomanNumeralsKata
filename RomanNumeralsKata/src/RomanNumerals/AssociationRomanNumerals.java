@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AssociationRomanNumerals {
-	int number;
-	String symbol;
+	private int number;
+	private String symbol;
 	
 	public AssociationRomanNumerals ( int number, String symbol) {
 		this.number = number;

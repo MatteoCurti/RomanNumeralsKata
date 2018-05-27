@@ -4,7 +4,7 @@ import java.util.List;
 
 public class RomanNumerals {
 	
-	public static final List<AssociationRomanNumerals> association = 
+	private static final List<AssociationRomanNumerals> association = 
 			AssociationRomanNumerals.getAssociation();
 	
 	public static String arabicToRoman(int arabicNumber) {
