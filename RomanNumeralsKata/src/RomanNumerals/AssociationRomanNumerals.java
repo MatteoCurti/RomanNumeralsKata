@@ -21,7 +21,8 @@ public class AssociationRomanNumerals {
 	}
 	
 	public static List<AssociationRomanNumerals> getAssociation(){
-		List<AssociationRomanNumerals> association = new ArrayList<AssociationRomanNumerals>();
+		List<AssociationRomanNumerals> association = 
+				new ArrayList<AssociationRomanNumerals>();
 		
 		association.add(new AssociationRomanNumerals(1000, "M"));
 		association.add(new AssociationRomanNumerals(900, "CM"));

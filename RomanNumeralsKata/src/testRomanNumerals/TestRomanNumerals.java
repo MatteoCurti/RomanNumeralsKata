@@ -78,32 +78,10 @@ public class TestRomanNumerals {
 		assertEquals("18", "XVIII", RomanNumerals.arabicToRoman(18));
 		assertEquals("19", "XIX", RomanNumerals.arabicToRoman(19));
 	}
+	
 	@Test
 	public void twenty() {
 		assertEquals("20", "XX", RomanNumerals.arabicToRoman(20));
-	}
-	
-	@Test
-	public void fromTwentyoneToThirtynine() {
-		assertEquals("21", "XXI", RomanNumerals.arabicToRoman(21));
-		assertEquals("22", "XXII", RomanNumerals.arabicToRoman(22));
-		assertEquals("23", "XXIII", RomanNumerals.arabicToRoman(23));
-		assertEquals("24", "XXIV", RomanNumerals.arabicToRoman(24));
-		assertEquals("25", "XXV", RomanNumerals.arabicToRoman(25));
-		assertEquals("26", "XXVI", RomanNumerals.arabicToRoman(26));
-		assertEquals("27", "XXVII", RomanNumerals.arabicToRoman(27));
-		assertEquals("28", "XXVIII", RomanNumerals.arabicToRoman(28));
-		assertEquals("29", "XXIX", RomanNumerals.arabicToRoman(29));
-		assertEquals("30", "XXX", RomanNumerals.arabicToRoman(30));
-		assertEquals("31", "XXXI", RomanNumerals.arabicToRoman(31));
-		assertEquals("32", "XXXII", RomanNumerals.arabicToRoman(32));
-		assertEquals("33", "XXXIII", RomanNumerals.arabicToRoman(33));
-		assertEquals("34", "XXXIV", RomanNumerals.arabicToRoman(34));
-		assertEquals("35", "XXXV", RomanNumerals.arabicToRoman(35));
-		assertEquals("36", "XXXVI", RomanNumerals.arabicToRoman(36));
-		assertEquals("37", "XXXVII", RomanNumerals.arabicToRoman(37));
-		assertEquals("38", "XXXVIII", RomanNumerals.arabicToRoman(38));
-		assertEquals("39", "XXXIX", RomanNumerals.arabicToRoman(39));
 	}
 	
 	@Test
@@ -158,5 +136,14 @@ public class TestRomanNumerals {
 		assertEquals("1207", "MCCVII", RomanNumerals.arabicToRoman(1207));	
 	}
 	
+	@Test
+	public void zero() {
+		assertEquals("0", "", RomanNumerals.arabicToRoman(0));
+	}
 	
+	@Test
+	public void negative() {
+		assertEquals("-987654321", "", RomanNumerals.arabicToRoman(-987654321));
+	}
+		
 }
