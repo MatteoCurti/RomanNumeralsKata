@@ -40,5 +40,10 @@ public class TestRomanNumerals {
 	public void five() {
 		assertEquals("5", "V", RomanNumerals.arabicToRoman(5));
 	}
+	
+	@Test
+	public void six() {
+		assertEquals("6", "VI", RomanNumerals.arabicToRoman(6));
+	}
 
 }
