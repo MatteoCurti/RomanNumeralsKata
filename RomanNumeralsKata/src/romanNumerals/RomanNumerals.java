@@ -1,18 +1,18 @@
 package romanNumerals;
 
-public class RomanNumerals {
+import java.util.List;
 
+public class RomanNumerals {
+	
+	public static final List<AssociationRomanNumerals> association = AssociationRomanNumerals.getAssociation();
+	
 	public static String arabicToRoman(int arabicNumber) {
 		StringBuffer romanNumber = new StringBuffer();
 		int rest = arabicNumber;
+		for(int index = 0 ; index < association.size() ; index++) {
+			rest = calculateRest(rest, association.get(index).getNumber(), association.get(index).getSymbol(), romanNumber);
+		}
 		
-		rest = calculateRest(rest, 40, "XL", romanNumber);
-		rest = calculateRest(rest, 20, "XX", romanNumber);
-		rest = calculateRest(rest, 10, "X", romanNumber);
-		rest = calculateRest(rest, 9, "IX", romanNumber);
-		rest = calculateRest(rest, 5, "V", romanNumber);
-		rest = calculateRest(rest, 4, "IV", romanNumber);
-
 		for(int index = 0 ; index < rest ; index++) {
 			romanNumber.append("I");
 		}

@@ -104,7 +104,6 @@ public class TestRomanNumerals {
 		assertEquals("37", "XXXVII", RomanNumerals.arabicToRoman(37));
 		assertEquals("38", "XXXVIII", RomanNumerals.arabicToRoman(38));
 		assertEquals("39", "XXXIX", RomanNumerals.arabicToRoman(39));
-		
 	}
 	
 	@Test
