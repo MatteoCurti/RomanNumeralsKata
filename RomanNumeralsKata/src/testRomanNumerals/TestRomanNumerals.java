@@ -23,5 +23,12 @@ public class TestRomanNumerals {
 	    assertEquals("1", "I", RomanNumerals.arabicToRoman(1));
 	    assertEquals("2", "II", RomanNumerals.arabicToRoman(2));
     }
+	
+	@Test
+	public void oneTwoThree() {
+		assertEquals("1", "I", RomanNumerals.arabicToRoman(1));
+		assertEquals("2", "II", RomanNumerals.arabicToRoman(2));
+		assertEquals("3", "III", RomanNumerals.arabicToRoman(3));
+	}
 
 }
