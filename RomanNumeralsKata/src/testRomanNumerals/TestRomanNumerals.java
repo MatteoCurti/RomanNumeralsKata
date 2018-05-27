@@ -139,5 +139,10 @@ public class TestRomanNumerals {
 		assertEquals("900", "CM", RomanNumerals.arabicToRoman(900));
 	}
 	
+	@Test
+	public void oneThousand() {
+		assertEquals("1000", "M", RomanNumerals.arabicToRoman(1000));
+	}
+	
 	
 }
