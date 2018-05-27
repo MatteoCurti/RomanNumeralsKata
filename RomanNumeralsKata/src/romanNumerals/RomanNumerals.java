@@ -5,10 +5,14 @@ public class RomanNumerals {
 	public static String arabicToRoman(int arabicNumber) {
 		String romanNumber = "";
 		
-		for(int index = 0 ; index < arabicNumber ; index++) {
-			romanNumber += "I";
+		if (arabicNumber == 4) {
+			romanNumber += "IV";
 		}
-		
+		else {
+			for(int index = 0 ; index < arabicNumber ; index++) {
+				romanNumber += "I";
+			}
+		}
 		return romanNumber;
 	}
 	
