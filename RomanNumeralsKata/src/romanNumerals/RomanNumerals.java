@@ -5,19 +5,19 @@ public class RomanNumerals {
 	public static String arabicToRoman(int arabicNumber) {
 		String romanNumber = "";
 		int rest = arabicNumber;
-		if (rest == 10) {
+		if (rest >= 10) {
 			romanNumber += "X";
 			rest -= 10;
 		}
-		else if (rest == 9) {
+		if (rest >= 9) {
 			romanNumber += "IX";
 			rest -= 9;
 		}		
-		else if (arabicNumber >= 5) {
+		if (rest >= 5) {
 			romanNumber += "V";
 			rest -= 5;
 		}
-		else if (arabicNumber == 4) {
+		if (rest >= 4) {
 			romanNumber += "IV";
 			rest =-4;
 		}
@@ -26,7 +26,6 @@ public class RomanNumerals {
 		}
 		return romanNumber;
 	}
-	
 	
 
 }
