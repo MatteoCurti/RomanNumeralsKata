@@ -35,7 +35,6 @@ public class AssociationRomanNumerals {
 		association.add(new AssociationRomanNumerals(1, "I"));
 		
 		return association;
-		
 	}
 	
 }
