@@ -23,6 +23,7 @@ public class AssociationRomanNumerals {
 	public static List<AssociationRomanNumerals> getAssociation(){
 		List<AssociationRomanNumerals> association = new ArrayList<AssociationRomanNumerals>();
 		
+		association.add(new AssociationRomanNumerals(500, "D"));
 		association.add(new AssociationRomanNumerals(100, "C"));
 		association.add(new AssociationRomanNumerals(90, "XC"));
 		association.add(new AssociationRomanNumerals(40, "XL"));
