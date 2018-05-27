@@ -17,5 +17,11 @@ public class TestRomanNumerals {
 	public void one() {
 		assertEquals("1", "I", RomanNumerals.arabicToRoman(1));
 	}
+	
+	@Test
+	public void oneTwo() {
+	    assertEquals("1", "I", RomanNumerals.arabicToRoman(1));
+	    assertEquals("2", "II", RomanNumerals.arabicToRoman(2));
+    }
 
 }
