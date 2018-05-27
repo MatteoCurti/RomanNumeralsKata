@@ -120,6 +120,11 @@ public class TestRomanNumerals {
 		assertEquals("90", "XC", RomanNumerals.arabicToRoman(90));
 	}
 	
+	@Test
+	public void oneHundred() {
+		assertEquals("100", "C", RomanNumerals.arabicToRoman(100));
+	}
+	
 	
 	
 }
