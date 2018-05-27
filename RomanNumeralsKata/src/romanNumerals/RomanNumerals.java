@@ -5,6 +5,10 @@ public class RomanNumerals {
 	public static String arabicToRoman(int arabicNumber) {
 		String romanNumber = "";
 		int rest = arabicNumber;
+		if (rest >= 20) {
+			romanNumber += "XX";
+			rest -= 20;
+		}
 		if (rest >= 10) {
 			romanNumber += "X";
 			rest -= 10;
