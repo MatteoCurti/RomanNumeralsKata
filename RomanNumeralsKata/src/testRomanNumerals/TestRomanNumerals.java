@@ -125,6 +125,14 @@ public class TestRomanNumerals {
 		assertEquals("100", "C", RomanNumerals.arabicToRoman(100));
 	}
 	
+	public void fourHundred() {
+		assertEquals("400", "CD", RomanNumerals.arabicToRoman(400));
+	}
+	
+	@Test
+	public void fiveHundred() {
+		assertEquals("500", "D", RomanNumerals.arabicToRoman(500));
+	}
 	
 	
 }
