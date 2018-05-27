@@ -111,5 +111,15 @@ public class TestRomanNumerals {
 		assertEquals("40", "XL", RomanNumerals.arabicToRoman(40));
 	}
 	
+	public void fifty() {
+		assertEquals("50", "L", RomanNumerals.arabicToRoman(50));
+	}
+	
+	@Test
+	public void ninety() {
+		assertEquals("90", "XC", RomanNumerals.arabicToRoman(90));
+	}
+	
+	
 	
 }
