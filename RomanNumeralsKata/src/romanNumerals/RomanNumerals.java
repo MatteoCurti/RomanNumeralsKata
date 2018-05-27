@@ -3,12 +3,14 @@ package romanNumerals;
 public class RomanNumerals {
 
 	public static String arabicToRoman(int arabicNumber) {
+		String romanNumber = "";
 		if(arabicNumber == 1) {
-			return "I";
+			romanNumber += "I";
 		}
 		else {
-			return "II";
+			romanNumber += "II";
 		}
+		return romanNumber;
 	}
 
 }
