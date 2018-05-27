@@ -60,4 +60,9 @@ public class TestRomanNumerals {
 	public void nineIsXPrefixedByI() {
 		assertEquals("9", "IX", RomanNumerals.arabicToRoman(9));
 	}
+	
+	@Test
+	public void ten() {
+		assertEquals("10", "X", RomanNumerals.arabicToRoman(10));
+	}
 }
