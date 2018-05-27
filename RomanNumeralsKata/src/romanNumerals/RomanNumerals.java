@@ -6,6 +6,7 @@ public class RomanNumerals {
 		StringBuffer romanNumber = new StringBuffer();
 		int rest = arabicNumber;
 		
+		rest = calculateRest(rest, 40, "XL", romanNumber);
 		rest = calculateRest(rest, 20, "XX", romanNumber);
 		rest = calculateRest(rest, 10, "X", romanNumber);
 		rest = calculateRest(rest, 9, "IX", romanNumber);
