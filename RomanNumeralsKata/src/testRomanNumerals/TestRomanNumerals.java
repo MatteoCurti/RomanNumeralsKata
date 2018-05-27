@@ -65,4 +65,21 @@ public class TestRomanNumerals {
 	public void ten() {
 		assertEquals("10", "X", RomanNumerals.arabicToRoman(10));
 	}
+	
+	@Test
+	public void fromElevenAtNineteen() {
+		assertEquals("11", "XI", RomanNumerals.arabicToRoman(11));
+		assertEquals("12", "XII", RomanNumerals.arabicToRoman(12));
+		assertEquals("13", "XIII", RomanNumerals.arabicToRoman(13));
+		assertEquals("14", "XIV", RomanNumerals.arabicToRoman(14));
+		assertEquals("15", "XV", RomanNumerals.arabicToRoman(15));
+		assertEquals("16", "XVI", RomanNumerals.arabicToRoman(16));
+		assertEquals("17", "XVII", RomanNumerals.arabicToRoman(17));
+		assertEquals("18", "XVIII", RomanNumerals.arabicToRoman(18));
+		assertEquals("19", "XIX", RomanNumerals.arabicToRoman(19));
+	}
+	@Test
+	public void twenty() {
+		assertEquals("20", "XX", RomanNumerals.arabicToRoman(20));
+	}
 }
