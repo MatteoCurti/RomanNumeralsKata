@@ -26,11 +26,11 @@ public class AssociationRomanNumerals {
 		association.add(new AssociationRomanNumerals(1000, "M"));
 		association.add(new AssociationRomanNumerals(900, "CM"));
 		association.add(new AssociationRomanNumerals(500, "D"));
+		association.add(new AssociationRomanNumerals(400, "CD")); 
 		association.add(new AssociationRomanNumerals(100, "C"));
 		association.add(new AssociationRomanNumerals(90, "XC"));
 		association.add(new AssociationRomanNumerals(50, "L"));
 		association.add(new AssociationRomanNumerals(40, "XL"));
-		association.add(new AssociationRomanNumerals(20, "XX"));
 		association.add(new AssociationRomanNumerals(10, "X"));
 		association.add(new AssociationRomanNumerals(9, "IX"));
 		association.add(new AssociationRomanNumerals(5, "V"));
