@@ -3,33 +3,29 @@ package romanNumerals;
 public class RomanNumerals {
 
 	public static String arabicToRoman(int arabicNumber) {
-		String romanNumber = "";
+		StringBuffer romanNumber = new StringBuffer();
 		int rest = arabicNumber;
-		if (rest >= 20) {
-			romanNumber += "XX";
-			rest -= 20;
-		}
-		if (rest >= 10) {
-			romanNumber += "X";
-			rest -= 10;
-		}
-		if (rest >= 9) {
-			romanNumber += "IX";
-			rest -= 9;
-		}		
-		if (rest >= 5) {
-			romanNumber += "V";
-			rest -= 5;
-		}
-		if (rest >= 4) {
-			romanNumber += "IV";
-			rest =-4;
-		}
+		
+		rest = calculateRest(rest, 20, "XX", romanNumber);
+		rest = calculateRest(rest, 10, "X", romanNumber);
+		rest = calculateRest(rest, 9, "IX", romanNumber);
+		rest = calculateRest(rest, 5, "V", romanNumber);
+		rest = calculateRest(rest, 4, "IV", romanNumber);
+
 		for(int index = 0 ; index < rest ; index++) {
-			romanNumber += "I";
+			romanNumber.append("I");
 		}
-		return romanNumber;
+		
+		return romanNumber.toString();
 	}
 	
+	private static int calculateRest(int arabicNumber, int over, String partialRomanNumber, StringBuffer romanNumber) {
+		int rest = arabicNumber;
+		if (rest >= over) {
+			romanNumber.append(partialRomanNumber);
+			rest -= over;
+		}
+		return rest;
+	}
 
 }
