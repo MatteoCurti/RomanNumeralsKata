@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import romanNumerals.RomanNumerals;
+import RomanNumerals.RomanNumerals;
 
 public class TestRomanNumerals {
 
@@ -142,6 +142,20 @@ public class TestRomanNumerals {
 	@Test
 	public void oneThousand() {
 		assertEquals("1000", "M", RomanNumerals.arabicToRoman(1000));
+	}
+	
+	@Test
+	public void mixArabicToRoman() {
+		assertEquals("1223", "MCCXXIII", RomanNumerals.arabicToRoman(1223));
+		assertEquals("1999", "MCMXCIX", RomanNumerals.arabicToRoman(1999));
+		assertEquals("2781", "MMDCCLXXXI", RomanNumerals.arabicToRoman(2781));
+		assertEquals("4567", "MMMMDLXVII", RomanNumerals.arabicToRoman(4567));
+		assertEquals("321", "CCCXXI", RomanNumerals.arabicToRoman(321));
+		assertEquals("3266", "MMMCCLXVI", RomanNumerals.arabicToRoman(3266));
+		assertEquals("1211", "MCCXI", RomanNumerals.arabicToRoman(1211));
+		assertEquals("4321", "MMMMCCCXXI", RomanNumerals.arabicToRoman(4321));
+		assertEquals("4789", "MMMMDCCLXXXIX", RomanNumerals.arabicToRoman(4789));
+		assertEquals("1207", "MCCVII", RomanNumerals.arabicToRoman(1207));	
 	}
 	
 	
