@@ -13,19 +13,17 @@ public class RomanNumerals {
 			rest = calculateRest(rest, association.get(index).getNumber(), association.get(index).getSymbol(), romanNumber);
 		}
 		
-		for(int index = 0 ; index < rest ; index++) {
-			romanNumber.append("I");
-		}
-		
 		return romanNumber.toString();
 	}
 	
 	private static int calculateRest(int arabicNumber, int over, String partialRomanNumber, StringBuffer romanNumber) {
 		int rest = arabicNumber;
-		if (rest >= over) {
-			romanNumber.append(partialRomanNumber);
-			rest -= over;
-		}
+		
+		while (rest >= over) {
+		    romanNumber.append(partialRomanNumber);
+		    rest -= over;
+		  }
+
 		return rest;
 	}
 
