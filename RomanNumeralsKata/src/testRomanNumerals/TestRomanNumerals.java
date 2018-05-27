@@ -46,4 +46,18 @@ public class TestRomanNumerals {
 		assertEquals("6", "VI", RomanNumerals.arabicToRoman(6));
 	}
 
+	@Test
+	public void seven() {
+		assertEquals("7", "VII", RomanNumerals.arabicToRoman(7));
+	}
+	
+	@Test
+	public void eight() {
+		assertEquals("8", "VIII", RomanNumerals.arabicToRoman(8));
+	}
+	
+	@Test
+	public void nineIsXPrefixedByI() {
+		assertEquals("9", "IX", RomanNumerals.arabicToRoman(9));
+	}
 }
