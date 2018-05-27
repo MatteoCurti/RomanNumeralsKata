@@ -4,22 +4,21 @@ public class RomanNumerals {
 
 	public static String arabicToRoman(int arabicNumber) {
 		String romanNumber = "";
-		if (arabicNumber == 9) {
+		int rest = arabicNumber;
+		if (rest == 9) {
 			romanNumber += "IX";
+			rest -= 9;
 		}		
 		else if (arabicNumber >= 5) {
 			romanNumber += "V";
-			for(int index = 0 ; index < arabicNumber - 5 ; index++) {
-				romanNumber += "I";
-			}
+			rest -= 5;
 		}
 		else if (arabicNumber == 4) {
 			romanNumber += "IV";
+			rest =-4;
 		}
-		else {
-			for(int index = 0 ; index < arabicNumber ; index++) {
-				romanNumber += "I";
-			}
+		for(int index = 0 ; index < rest ; index++) {
+			romanNumber += "I";
 		}
 		return romanNumber;
 	}
